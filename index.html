@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Colleagues | Software Development Solutions</title>
+    <link rel="icon" href="/images/TechLogo.jpeg" type="image/x-icon" />
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="Tech Colleagues offers custom software, app, and website development solutions for businesses, empowering them with innovative technology and tailored services."
+    />
+
+    <!-- Meta Keywords -->
+    <meta
+      name="keywords"
+      content="Tech Colleagues, software development, app development, web development, custom software solutions, IT services"
+    />
+
+    <!-- Author Information -->
+    <meta name="author" content="Tech Colleagues" />
+    <!-- Open Graph Meta for Social Sharing -->
+    <meta
+      property="og:title"
+      content="Tech Colleagues | Software Development Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Custom software, app, and website development solutions tailored to your business needs."
+    />
+    <meta property="og:image" content="path-to-your-logo-or-image.jpg" />
+    <meta property="og:url" content="https://www.techcolleagues.com" />
+
+    <!-- libraries links -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="">
+    <!-- Toast Notification (Bootstrap) -->
+    <div class="toast-container position-fixed top-2 end-0 p-3">
+      <div
+        id="successToast"
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Message sent successfully!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <!-- Error Toast -->
+    <div class="toast-container position-fixed top-2 end-0 p-3">
+      <div
+        id="errorToast"
+        class="toast align-items-center text-bg-success border-0"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex">
+          <div class="toast-body">Oops, Somthing went wrong!</div>
+          <button
+            type="button"
+            class="btn-close btn-close-white me-2 m-auto"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+
+    <a
+      href="#"
+      class="position-fixed rounded-circle d-flex justify-content-center align-items-center text-decoration-none"
+      id="back-to-top"
+      style="
+        width: 55px;
+        height: 55px;
+        background-color: #1faaae;
+        color: white;
+        bottom: 30px;
+        z-index: 1001;
+        right: 30px;
+      "
+    >
+      <i class="fa-solid fa-arrow-up text-light"></i>
+    </a>
+    <section class="header-main-container">
+      <div class="circle-move"></div>
+      <video autoplay muted loop id="background-video">
+        <source src="/images/backvideo2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <header
+        class="d-none justify-content-between px-5 align-items-center py-2 bg-white"
+      >
+        <div class="d-flex justify-content-between align-items-center gap-4">
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-location-dot icon-color"></i
+            ><span class="fs-6 font-color">Find A Location</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-phone icon-color"></i
+            ><span class="fs-6 font-color">+01234567890</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-envelope icon-color"></i
+            ><span class="fs-6 font-color">Example@gmail.com</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center gap-4">
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-person icon-color"></i>
+            <span class="fs-6 font-color">Register</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-right-to-bracket icon-color"></i>
+            <span class="fs-6 font-color">Login</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-house-chimney icon-color"></i>
+            <span class="fs-6 font-color">My Dashboard</span>
+            <i class="fa-solid fa-angle-down icon-color"></i>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg bg-md-white py-md-2 py-lg-0"
+        id="navbar"
+        style="transition: 0.5s all ease-in-out"
+      >
+        <div class="container-fluid px-5">
+          <a href="#" class="interactive">
+            <img
+              src="/images/TechLogo.png"
+              alt="Tech colleagues logo"
+              style="width: 85px; height: auto; filter: brightness(1.3)"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-lg-0 mt-md-3 mt-lg-1 mb-3 gap-2">
+              <li
+                class="nav-item text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="nav-link py-lg-4 interactive"
+                  aria-current="page"
+                  href="#home-section"
+                  data-link="home-section"
+                  id="home-link"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="nav-item text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="nav-link py-lg-4 interactive"
+                  href="#about-us-section"
+                  data-link="about-us-section"
+                  id="about-link"
+                  >About</a
+                >
+              </li>
+              <li
+                class="nav-item text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="nav-link py-lg-4 interactive"
+                  href="#services-section"
+                  data-link="services-section"
+                  id="services-link"
+                  >Services</a
+                >
+              </li>
+              <li
+                class="nav-item text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="nav-link py-lg-4 interactive"
+                  href="#our-offer-section"
+                  data-link="our-offer-section"
+                  id="offers-link"
+                  >Offers</a
+                >
+              </li>
+              <li
+                class="nav-item text-white d-flex justify-content-center align-items-center"
+              >
+                <a
+                  class="nav-link py-lg-4 interactive"
+                  href="#contact-section"
+                  data-link="contact-section"
+                  id="contact-us-link"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+            <a
+              class="interactive rounded-pill text-white ms-2 fw-bold py-2 px-4 my-3 my-lg-0 flex-shrink-0 nav-links-btn text-decoration-none"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <!-- Text Context Area -->
+      <section class="py-md-5" id="home-section">
+        <div
+          class="d-flex justify-content-sm-center align-items-center text-white px-5 py-5 mt-5"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div class="col-xl-6 col-md-12 text-sm-center text-md-start px-sm-2">
+            <h4
+              class="sections-heading-h4 fw-bold mb-4 mt-3 d-flex flex-column flex-md-row justify-content-start align-items-center"
+            >
+              <span>Welcome To</span>
+              <span class="tech-colleague-name px-3 py-2 rounded-3 ms-md-2"
+                >Tech Colleagues</span
+              >
+            </h4>
+
+            <h1 class="fw-bold mb-4 display-6">
+              Transform Your Business with Advanced Tech Solutions
+            </h1>
+            <p class="fs-5 text-md-start mb-5">
+              Offering innovative software solutions to drive growth and
+              efficiency. Let us transform your business with technology.
+            </p>
+            <div
+              class="mb-4 d-flex flex-column flex-sm-row justify-content-md-start justify-content-sm-center gap-3"
+            >
+              <a
+                class="interactive d-flex justify-content-center align-items-center watch-btn rounded-5 fw-bold px-5 py-3 text-decoration-none"
+              >
+                <i class="fa-solid fa-circle-play me-2"></i>
+                <span>Watch Video</span>
+              </a>
+              <a
+                class="interactive d-flex justify-content-center align-items-center learn-btn text-white rounded-5 fw-bold px-5 px-3 py-3 text-decoration-none nav-links-btn"
+              >
+                Learn More
+              </a>
+            </div>
+            <div
+              class="d-flex flex-column flex-md-row align-items-center justify-content-center justify-content-md-start gap-2"
+            >
+              <h2 class="me-2">Follow Us:</h2>
+              <div class="follow-icons d-flex justify-content-end ms-2">
+                <a
+                  href="#"
+                  class="me-2 rounded-circle text-decoration-none interactive d-flex justify-content-center align-items-center"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="me-2 rounded-circle text-decoration-none interactive d-flex justify-content-center align-items-center"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="me-2 rounded-circle text-decoration-none interactive d-flex justify-content-center align-items-center"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/tech-colleagues/posts/?feedView=all"
+                  class="me-2 rounded-circle text-decoration-none interactive d-flex justify-content-center align-items-center"
+                  style="width: 45px; height: 45px"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-0"></div>
+        </div>
+      </section>
+    </section>
+
+    <!-- About Us Starts here -->
+    <section class="px-2 pb-5" id="about-us-section">
+      <div class="container pb-5">
+        <div class="row">
+          <div
+            class="col-xl-7 mt-sm-3 mt-5"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h4 class="fw-bold sections-heading-h4" style="color: #00d084">
+              About Us
+            </h4>
+            <h1 class="mb-3 fw-bold">
+              Meet our company unless miss the opportunity
+            </h1>
+            <p class="mb-4" style="color: rgb(92, 90, 90)">
+              We design and deliver software that transforms businesses. Our
+              innovative solutions drive client growth in a fast-evolving
+              digital world.
+            </p>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="fa-solid fa-lightbulb me-3 mt-1"
+                    style="color: #00d084; font-size: 50px"
+                  ></i>
+                  <div>
+                    <h4 class="">Business Consulting</h4>
+                    <p style="color: rgb(92, 90, 90)">
+                      We provide expert guidance and strategic solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="fa-solid fa-bookmark me-3 mt-1"
+                    style="color: #00d084; font-size: 50px"
+                  ></i>
+                  <div>
+                    <h4 class="">Year of expertise</h4>
+                    <p style="color: rgb(92, 90, 90)">
+                      Years of expertise, delivering innovative solutions for
+                      growth.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                  <a
+                    class="nav-links-btn text-white py-3 px-5 rounded-pill fw-bold text-decoration-none"
+                  >
+                    Discover Now
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-start">
+                  <i
+                    class="fa-solid fa-phone me-3 mt-1"
+                    style="color: #00d084; font-size: 45px"
+                  ></i>
+                  <div>
+                    <h4 class="">Call Us</h4>
+                    <p style="color: rgb(92, 90, 90)">+923000910043</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-xl-5 mt-5 mt-xl-0"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="rounded position-relative overflow-hidden">
+              <img
+                src="/images/gptabout1(crop)2.webp"
+                alt="crypto-image"
+                class="img-fluid rounded w-100 pt-4 about2-ciklum"
+                style="
+                  object-fit: cover;
+
+                  background-color: #00d084;
+                "
+              />
+              <!-- <div class="position-absolute top-0 end-0 p-2">
+                <img
+                  src="/images/about-1-part-2.png"
+                  alt="crypto-image"
+                  class="img-fluid"
+                  style="width: 120px; height: 120px; opacity: 0.7"
+                />
+              </div>
+              <div
+                class="position-absolute top-0 start-0 p-2"
+                style="transform: rotate(90deg)"
+              >
+                <img
+                  src="/images/about-1-part-1.png"
+                  alt="crypto-image"
+                  class="img-fluid"
+                  style="width: 80px; height: 120px; opacity: 0.9"
+                />
+              </div> -->
+              <div>
+                <img
+                  src="/images/aboutistock1(crop).jpg"
+                  class="img-fluid rounded-bottom w-100"
+                  alt="below-image"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Ends Here -->
+
+    <!-- Our Services Starts here -->
+    <section class="container-fluid pb-5" id="services-section">
+      <div class="container pb-5">
+        <div
+          class="text-center mb-5"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h4 class="fw-bold sections-heading-h4" style="color: #00d084">
+            Our Services
+          </h4>
+          <h1 class="mb-4 fw-bold">Our Services Provide Best Offer</h1>
+          <p>
+            Our comprehensive range of IT services, from web development to
+            maintenance, ensures your business remains competitive and
+            up-to-date. Let us handle your technology needs professionally.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="/images/webdev2.avif"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Web Development</a
+                >
+                <p
+                  class="services-paragraph mb-4"
+                  style="color: rgb(112, 111, 111)"
+                >
+                  We build responsive websites designed for performance and
+                  scalability, ensuring seamless user experiences and helping
+                  your business succeed in the digital world.
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-decoration-none py-2 px-4 nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="/images/appdev1.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >App Development</a
+                >
+                <p
+                  class="services-paragraph mb-4"
+                  style="color: rgb(112, 111, 111)"
+                >
+                  We develop cutting-edge mobile and web applications tailored
+                  to your needs, delivering functionality, reliability, and a
+                  better user experience across all platforms.
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-decoration-none py-2 px-4 nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="/images/webmain.png"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Website Maintenance</a
+                >
+                <p
+                  class="services-paragraph mb-4"
+                  style="color: rgb(112, 111, 111)"
+                >
+                  Our comprehensive website maintenance services keep your site
+                  updated, secure, and optimized, ensuring smooth performance
+                  and user experience with ongoing technical support.
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-decoration-none py-2 px-4 nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="/images/uiux2.jpeg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Graphic Designing</a
+                >
+                <p
+                  class="services-paragraph mb-4"
+                  style="color: rgb(112, 111, 111)"
+                >
+                  We create visually stunning designs that reflect your brand
+                  identity, crafting logos, banners, and marketing materials to
+                  captivate and engage your audience effectively.
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-decoration-none py-2 px-4 nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="/images/grahhicdesign.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >UI/UX Design</a
+                >
+                <p
+                  class="services-paragraph mb-4"
+                  style="color: rgb(112, 111, 111)"
+                >
+                  We specialize in intuitive UI/UX design that enhances user
+                  experience, creating interfaces that are visually appealing,
+                  easy to navigate, and highly functional.
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-decoration-none py-2 px-4 nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="/images/service-6.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >SEO Optimization</a
+                >
+                <p
+                  class="services-paragraph mb-4"
+                  style="color: rgb(112, 111, 111)"
+                >
+                  Our SEO optimization strategies improve website ranking,
+                  driving organic traffic, increasing visibility, positioning
+                  your business for growth in search engine results.
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-decoration-none py-2 px-4 nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Servives Ends here -->
+
+    <!-- Our Offer Starts here  -->
+    <section class="pb-3 pt-0 mb-5" id="our-offer-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="row text-center mb-4 px-md-5">
+          <div class="col px-md-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="fw-bold mb-3 sections-heading-h4">Our Offer</h4>
+            <h1 class="mb-3 fw-bold">Benefits We Offer</h1>
+            <p style="color: rgb(110, 109, 109)">
+              Unlock your business's potential with our customized software and
+              IT services. We focus on enhancing your operational efficiency and
+              delivering growth through cutting-edge solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Features and Image Section -->
+        <div class="row">
+          <!-- Features Section -->
+          <div
+            class="col-lg-5 mb-4 mb-lg-0"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div
+              class="p-5 rounded-3"
+              style="background-color: rgb(240, 238, 238)"
+            >
+              <div class="mb-4 p-4 bg-white rounded">
+                <h5>Enhance growth with customized software solutions.</h5>
+              </div>
+              <div
+                class="mb-4 p-4 text-white rounded"
+                style="background-color: #4179c7"
+              >
+                <h5>Efficient, tailored software built for your success.</h5>
+              </div>
+              <div class="mb-4 p-4 bg-white rounded">
+                <h5>
+                  Transform your business with scalable digital solutions.
+                </h5>
+              </div>
+              <div class="p-4 bg-light bg-white rounded">
+                <h5>Smooth software integration for improved productivity.</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image and Text Section -->
+          <div
+            class="col-lg-7 mt-3"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="row">
+              <!-- Image -->
+              <div class="col-md-7">
+                <img
+                  src="/images/offer2-image.jpg"
+                  alt="stock-market"
+                  class="img-fluid rounded mb-3"
+                />
+              </div>
+              <!-- Text Content -->
+              <div class="col-md-5 px-4">
+                <h1 class="fw-bold mb-4">
+                  Empowering Businesses with Advanced Software...
+                </h1>
+                <p class="mb-4" style="color: rgb(97, 96, 96)">
+                  Unlock your potential with comprehensive software solutions.
+                  From strategy to deployment, we help you stay ahead in the
+                  ever-evolving tech landscape...
+                </p>
+                <a
+                  href="#"
+                  class="rounded-pill text-white fw-bold px-4 py-2 text-decoration-none nav-links-btn"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Offer Ends Here -->
+
+    <!-- Delievering iT Solution Starts here -->
+    <section class="container text-center mb-5 pb-5">
+      <div
+        class="mb-5 px-5 px-sm-2"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h4 class="sections-heading-h4 fw-bold mb-3">Our Work</h4>
+        <h1 class="fw-bold mb-4">Delievering IT Solutions</h1>
+        <p style="color: rgb(104, 102, 102)">
+          We provide innovative IT services to solve your business challenges,
+          ensuring seamless technology integration. Let us transform your
+          digital vision into reality with tailored solutions.
+        </p>
+      </div>
+      <div class="row progress-section">
+        <!-- Circle 1 -->
+        <div class="col-lg-4 mt-5" data-aos="zoom-in" data-aos-duration="500">
+          <div class="circle" id="circle1" data-value="0.75" data-number="200">
+            <canvas width="210" height="210"></canvas>
+            <h6 class="counter-num">0+</h6>
+            <p class="fs-5 mt-4">Satisfied Customers</p>
+          </div>
+        </div>
+
+        <!-- Circle 2 -->
+        <div class="col-lg-4 mt-5" data-aos="zoom-in" data-aos-duration="500">
+          <div class="circle" id="circle2" data-value="0.9" data-number="100">
+            <canvas width="210" height="210"></canvas>
+            <h6 class="counter-num">0</h6>
+            <p class="fs-5 mt-4">Projects Completed</p>
+          </div>
+        </div>
+
+        <!-- Circle 3 -->
+        <div class="col-lg-4 mt-5" data-aos="zoom-in" data-aos-duration="500">
+          <div class="circle" id="circle3" data-value="0.6" data-number="50">
+            <canvas width="210" height="210"></canvas>
+            <h6 class="counter-num">0</h6>
+            <p class="fs-5 mt-4">CMS Installations</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Delievering iT Solution Ends here -->
+
+    <!-- testimonials Starts here -->
+    <div class="container-fluid py-3">
+      <div class="container">
+        <div
+          class="text-center mb-5 px-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <h4 class="fw-bold mb-3 sections-heading-h4">Testimonials</h4>
+          <h1 class="fw-bold mb-4">Our Client Reviews</h1>
+          <p class="mb-5 mx-md-5 mx-lg-5" style="color: rgb(99, 98, 98)">
+            Our clients trust us for delivering exceptional solutions that drive
+            business success. Hear from them how our services have transformed
+            their digital presence and achieved measurable results.
+          </p>
+        </div>
+        <!-- Cards Section -->
+
+        <div class="owl-carousel owl-theme">
+          <div
+            class="carousel-card text-center bg-light position-relative p-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="/images/testimonial-1.jpg"
+                alt="responsive"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-card text-center bg-light position-relative p-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="/images/testimonial-2.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-card text-center bg-light position-relative p-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="/images/testimonial-3.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-card text-center bg-light position-relative p-4"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="/images/testimonial-2.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cards Section Ends -->
+      </div>
+    </div>
+    <!-- Testimonials Ends here -->
+
+    <!-- Contact Us Starts here -->
+    <section class="container-fluid py-5" id="contact-section">
+      <div class="row px-md-5 px-lg-5 px-xl-5">
+        <div
+          class="col-xl-6 px-md-5 px-lg-5 px-xl-5"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="bg-light rounded-5 p-5 mb-4">
+            <h5 class="fw-bold sections-heading-h4">Send your message</h5>
+            <p style="color: rgb(114, 112, 112)">
+              The contact form is currently inactive. Get a functional and
+              working contact form with Ajax & PHP in a few minutes. Just copy
+              and paste the files, add a little code and you're done.
+            </p>
+            <form id="form">
+              <div class="row g-4">
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control border-0"
+                      id="name"
+                      placeholder="Your Name"
+                    />
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="email"
+                      class="form-control border-0"
+                      id="email"
+                      placeholder="Your Email"
+                    />
+                    <label for="email">Your Email</label>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="phone"
+                      class="form-control border-0"
+                      id="phone"
+                      placeholder="Phone"
+                    />
+                    <label for="phone">Your Phone</label>
+                  </div>
+                </div>
+                <div class="col-lg-12 col-xl-6">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control border-0"
+                      id="project"
+                      placeholder="Project"
+                    />
+                    <label for="project">Your Project</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <input
+                      type="text"
+                      class="form-control border-0"
+                      id="subject"
+                      placeholder="Subject"
+                    />
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea
+                      class="form-control border-0"
+                      placeholder="Leave a message here"
+                      id="message"
+                      style="height: 160px"
+                    ></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <a
+                    id="submitButton"
+                    type="button"
+                    class="text-center text-decoration-none rounded w-100 py-3 text-white nav-links-btn"
+                  >
+                    Send Message
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="bg-light rounded-5 p-5">
+            <h4 class="fw-bold mb-4 sections-heading-h4">Get in touch</h4>
+            <div class="row">
+              <div class="col-md-6">
+                <i class="fa-solid fa-location-dot fs-3 mb-3"></i>
+                <h4>Address</h4>
+                <p>123 Street New York, USA</p>
+              </div>
+              <div class="col-md-6">
+                <i class="fa-solid fa-envelope fs-3 mb-3"></i>
+                <h4>Mail Us</h4>
+                <p>info@example.com</p>
+              </div>
+              <div class="col-md-6 mt-2">
+                <i class="fa-solid fa-phone fs-3 mb-3"></i>
+                <h4>Telephone</h4>
+                <p>(+012) 3456 7890</p>
+              </div>
+              <div class="col-md-6 mt-2">
+                <i
+                  class="fa-brands fa-firefox-browser fs-3 mb-3"
+                  style="color: #1faaae"
+                ></i>
+                <h4>Yoursite@ex.com</h4>
+                <p>(+012) 3456 7890</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 px-3" data-aos="fade-left" data-aos-duration="500">
+          <div class="rounded-5 h-100 w-100 mt-md-2">
+            <iframe
+              class="rounded h-100 w-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26582.94592500589!2d73.14608097227512!3d33.60872299289488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfec0851d92db3%3A0x66f28b1327836ee2!2sGulberg%20Greens%20Islamabad%2C%20Islamabad%20Capital%20Territory%2C%20Pakistan!5e0!3m2!1sen!2s!4v1727275098371!5m2!1sen!2s"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Us Ends here -->
+
+    <!-- Footer Starts here  -->
+    <footer class="text-light py-5" style="background-color: #17303b">
+      <div class="container">
+        <div class="row py-5 footer-border text-start">
+          <!-- Company Info Section -->
+          <div class="col-lg-4 col-xl-4 col-sm-12 col-xl-4 mb-4">
+            <img
+              src="/images/TechLogo.png"
+              alt="Tech colleagues logo footer"
+              class="img-fluid mb-3"
+              style="width: 100px; height: auto; filter: brightness(1.3)"
+            />
+            <p class="mb-4" style="color: rgb(119, 117, 117)">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Similique tempora beatae ea vitae provident, officiis aperiam.
+              Illo deleniti asperiores culpa voluptate quod atque, saepe quo
+              incidunt eligendi consequatur obcaecati
+            </p>
+            <!-- App Download Buttons -->
+            <!-- <div class="d-flex">
+              <a
+                href="#"
+                class="btn text-white d-flex justify-content-center align-items-center me-2 px-3 py-3 rounded nav-links-btn"
+              >
+                <i class="fa-brands fa-apple me-3 fs-5"></i>
+                <div class="d-flex flex-column align-items-start">
+                  <small> Download on the </small>
+                  <p class="m-0">App Store</p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="btn bg-black text-white d-flex justify-content-center align-items-center px-3 me-2"
+              >
+                <i class="fa-solid fa-play me-3"></i>
+                <div class="d-flex flex-column align-items-start">
+                  <small>Get it on</small>
+                  <p class="m-0">Google Play</p>
+                </div>
+              </a>
+            </div> -->
+          </div>
+
+          <!-- Quick Links Section -->
+          <div
+            class="col-lg-4 col-xl-4 col-sm-12 col-xl-2 mb-4 quick-fade d-flex flex-column justify-content-start align-items-lg-center"
+          >
+            <h5 class="fw-bold text-uppercase mb-4">Quick Links</h5>
+            <div class="list-unstyled d-flex flex-column gap-2">
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Home</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>About Us</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Services</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Offers</a
+                >
+              </div>
+              <!-- <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Blog</a
+                >
+              </div> -->
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Section -->
+          <!-- <div class="col-lg-4 col-xl-4 col-sm-12 col-xl-3 mb-4 support-fade">
+            <h5 class="fw-bold text-uppercase mb-4">Support</h5>
+            <div class="list-unstyled d-flex flex-column gap-2">
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Privacy Policy</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Terms & Conditions</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Disclaimer</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Support</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  FAQ</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Help</a
+                >
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Contact Info Section -->
+          <div class="col-lg-4 col-xl-4 col-sm-12 col-xl-3 mb-4">
+            <h5 class="fw-bold text-uppercase mb-4">Contact Info</h5>
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-solid fa-location-dot me-3 mb-0"
+                  style="color: #00d084"
+                ></i>
+                <p class="mb-0">123 Street, New York, USA</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-envelope me-3" style="color: #00d084"></i>
+                <p class="mb-0">info@example.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-phone me-3" style="color: #00d084"></i>
+                <p class="mb-0">(+012) 3456 7890</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-brands fa-firefox-browser me-3"
+                  style="color: #1faaae"
+                ></i>
+                <p class="mb-0">Yoursite@ex.com</p>
+              </div>
+            </div>
+            <!-- Social Icons -->
+            <div class="d-flex mt-4">
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #1faaae;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #1faaae;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #1faaae;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/tech-colleagues/posts/?feedView=all"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #1faaae;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Ends here -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- Circle Progress -->
+    <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.2/dist/circle-progress.js"></script>
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="index.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $(".circle canvas").remove();
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Owl Carousel
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          smartSpeed: 1000,
+          autoplayTimeout: 2000,
+          autoplayHoverPause: true,
+          autoHeight: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            1100: {
+              items: 3,
+            },
+          },
+          slideBy: 1,
+        });
+      });
+    </script>
+  </body>
+</html>

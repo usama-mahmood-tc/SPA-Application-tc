@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="header-main-container">
+      <header
+        class="d-none d-lg-flex justify-content-between px-5 align-items-center py-2 bg-white"
+      >
+        <div class="d-flex justify-content-between align-items-center gap-4">
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-location-dot icon-color"></i
+            ><span class="fs-6 font-color">Find A Location</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-phone icon-color"></i
+            ><span class="fs-6 font-color">+01234567890</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-envelope icon-color"></i
+            ><span class="fs-6 font-color">Example@gmail.com</span>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center gap-4">
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-person icon-color"></i>
+            <span class="fs-6 font-color">Register</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-right-to-bracket icon-color"></i>
+            <span class="fs-6 font-color">Login</span>
+          </div>
+          <div class="d-flex justify-content-center align-items-center gap-2">
+            <i class="fa-solid fa-house-chimney icon-color"></i>
+            <span class="fs-6 font-color">My Dashboard</span>
+            <i class="fa-solid fa-angle-down icon-color"></i>
+          </div>
+        </div>
+      </header>
+      <!-- Navbar Starts here  -->
+      <nav
+        class="navbar navbar-expand-lg bg-md-white py-md-3 py-lg-0"
+        id="navbar"
+      >
+        <div class="container-fluid px-5">
+          <h1 style="color: #00d084" class="p-0 m-0">
+            <i class="fa-solid fa-magnifying-glass-dollar me-3"></i>
+            Stocker
+          </h1>
+          <button
+            style="color: #00d084"
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-lg-0 mt-md-3 mt-lg-1 gap-4">
+              <li class="py-lg-4">
+                <a class="" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="py-lg-4">
+                <a class="" href="#">About</a>
+              </li>
+              <li class="py-lg-4">
+                <a class="" href="#">Services</a>
+              </li>
+              <li class="py-lg-4">
+                <a class="" href="#">Blogs</a>
+              </li>
+              <li class="py-lg-4 dropdown">
+                <a
+                  class="dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="py-lg-4">
+                <a href="contact.html" class="">Contact Us</a>
+              </li>
+            </ul>
+            <button
+              class="rounded-pill ms-3 fw-bold py-2 px-4 my-3 my-lg-0 flex-shrink-0 nav-links-btn"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar Ends here -->
+
+      <!-- Text Context Starts -->
+      <div class="py-5">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center text-white py-5"
+        >
+          <div>
+            <h1 class="text-white first-heading fs-1 fw-bold mb-3 mt-3">
+              Our Services
+            </h1>
+          </div>
+          <ul
+            class="list-unstyled d-flex justify-content-center align-items-center gap-2"
+          >
+            <li>
+              <a href="index.html" class="text-white">Home</a>
+            </li>
+            <li>
+              <a href="#" class="text-white">/</a>
+            </li>
+            <li><a href="#" class="text-white">Pages</a></li>
+            <li><a href="#" class="text-white">/</a></li>
+            <li>
+              <a href="#" class="" style="color: #00d084">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Text Content Ends -->
+    </section>
+    <!-- Services Starts here -->
+    <div class="container-fluid py-5">
+      <div class="container py-5">
+        <div class="text-center mb-5">
+          <h4 class="fw-bold" style="color: #00d084">Our Services</h4>
+          <h1 class="fw-bold">Our Services provide best Offer</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+            adipisci facilis cupiditate recusandae aperiam temporibus corporis
+            itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
+            obcaecati, ipsam mollitia hic.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="service-1.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Strategy Consulting</a
+                >
+                <p style="color: rgb(112, 111, 111)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, sint? Excepturi facilis neque nesciunt similique
+                  officiis veritatis,
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-pill py-2 px-4"
+                  style="background-color: #00d084; color: white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="service-2.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Financial Advisory</a
+                >
+                <p style="color: rgb(112, 111, 111)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, sint? Excepturi facilis neque nesciunt similique
+                  officiis veritatis,
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-pill py-2 px-4"
+                  style="background-color: #00d084; color: white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="service-3.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Managements</a
+                >
+                <p style="color: rgb(112, 111, 111)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, sint? Excepturi facilis neque nesciunt similique
+                  officiis veritatis,
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-pill py-2 px-4"
+                  style="background-color: #00d084; color: white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="service-4.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Supply Optimization</a
+                >
+                <p style="color: rgb(112, 111, 111)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, sint? Excepturi facilis neque nesciunt similique
+                  officiis veritatis,
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-pill py-2 px-4"
+                  style="background-color: #00d084; color: white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="service-5.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Hr Consulting</a
+                >
+                <p style="color: rgb(112, 111, 111)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, sint? Excepturi facilis neque nesciunt similique
+                  officiis veritatis,
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-pill py-2 px-4"
+                  style="background-color: #00d084; color: white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="service-item bg-light rounded mb-3">
+              <div class="service-img">
+                <img
+                  src="service-6.jpg"
+                  alt="Service-img"
+                  class="img-fluid rounded-top w-100"
+                />
+              </div>
+              <div class="p-4">
+                <a
+                  href="#"
+                  class="h4 d-inline-block mb-4 text-decoration-none fw-bold card-a-hover"
+                  >Marketing Consulting</a
+                >
+                <p style="color: rgb(112, 111, 111)">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tenetur, sint? Excepturi facilis neque nesciunt similique
+                  officiis veritatis,
+                </p>
+                <a
+                  href="#"
+                  class="btn rounded-pill py-2 px-4"
+                  style="background-color: #00d084; color: white"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services ends here -->
+
+    <!-- carousel Starts here -->
+    <div class="container-fluid py-3">
+      <div class="container">
+        <div class="text-center mb-5 px-5">
+          <h4 class="fw-bold mb-3" style="color: #00d084">Testimonials</h4>
+          <h1 class="fw-bold mb-4">Our Client Reviews</h1>
+          <p class="mb-5 mx-md-5 mx-lg-5" style="color: rgb(99, 98, 98)">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
+            adipisci facilis cupiditate recusandae aperiam temporibus corporis
+            itaque quis facere, numquam, ad culpa deserunt sint dolorem autem
+            obcaecati, ipsam mollitia hic.
+          </p>
+        </div>
+        <!-- Cards Section -->
+
+        <div class="owl-carousel owl-theme">
+          <div class="carousel-card text-center bg-light position-relative p-4">
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="testimonial-1.jpg"
+                alt="responsive"
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card text-center bg-light position-relative p-4">
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="testimonial-2.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card text-center bg-light position-relative p-4">
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="testimonial-3.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-card text-center bg-light position-relative p-4">
+            <div
+              class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+              style="
+                width: 55px;
+                height: 55px;
+                left: 30px;
+                transform: translateY(-100%);
+              "
+            >
+              <i class="fa-solid fa-quote-left fs-3" style="color: #00d084"></i>
+            </div>
+            <div class="rounded-circle" style="transform: translateY(-50%)">
+              <img
+                src="testimonial-2.jpg"
+                alt=""
+                class="img-fluid rounded-circle"
+              />
+            </div>
+            <p style="color: rgb(110, 109, 109)">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              cumque excepturi veniam sint libero architecto eum sequi id
+              explicabo ratione adipisci enim minima, consequatur assumenda a
+              cupiditate doloremque! Porro, sed.
+            </p>
+            <div
+              class="Testimonial-title d-flex justify-content-between align-items-center"
+            >
+              <div class="text-start">
+                <h4>Person Name</h4>
+                <p>Profession</p>
+              </div>
+              <div class="mb-5">
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+                <i class="fa-solid fa-star" style="color: #00d084"></i>
+              </div>
+
+              <div
+                class="text-center d-flex justify-content-center align-items-center bg-white rounded-circle position-absolute"
+                style="
+                  width: 55px;
+                  height: 55px;
+                  right: 30px;
+                  transform: translateY(110%);
+                "
+              >
+                <i
+                  class="fa-solid fa-quote-right fs-3"
+                  style="color: #00d084"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Cards Section Ends -->
+      </div>
+    </div>
+    <!-- carousel Ends here -->
+
+    <!-- Footer starts here -->
+    <footer class="text-light py-5" style="background-color: #17303b">
+      <div class="container">
+        <div class="row py-5 footer-border">
+          <!-- Company Info Section -->
+          <div class="col-lg-6 col-md-6 col-xl-4 mb-4">
+            <h5 class="fw-bold text-uppercase mb-3">
+              <i class="fa-solid fa-magnifying-glass-dollar me-3"></i>
+              Stocker
+            </h5>
+            <p class="mb-4" style="color: rgb(119, 117, 117)">
+              Dolor amet sit justo amet elitr clita ipsum<br />
+              dolor sit amet, consectetur adipiscing...
+            </p>
+            <!-- App Download Buttons -->
+            <div class="d-flex">
+              <a
+                href="#"
+                class="btn text-white d-flex justify-content-center align-items-center me-2 px-3 py-3 rounded"
+                style="background-color: #00d084"
+              >
+                <i class="fa-brands fa-apple me-3 fs-5"></i>
+                <div class="d-flex flex-column align-items-start">
+                  <small> Download on the </small>
+                  <p class="m-0">App Store</p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="btn bg-black text-white d-flex justify-content-center align-items-center px-3 me-2"
+              >
+                <i class="fa-solid fa-play me-3" style="color: #00d084"></i>
+                <div class="d-flex flex-column align-items-start">
+                  <small>Get it on</small>
+                  <p class="m-0">Google Play</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div class="col-lg-6 col-md-6 col-xl-2 mb-4 quick-fade">
+            <h5 class="fw-bold text-uppercase mb-4">Quick Links</h5>
+            <div class="list-unstyled d-flex flex-column gap-2">
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>About Us</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Feature</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Attractions</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Tickets</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Blog</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none"
+                  ><i class="fa-solid fa-angle-right me-3"></i>Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Support Section -->
+          <div class="col-lg-6 col-md-6 col-xl-3 mb-4 support-fade">
+            <h5 class="fw-bold text-uppercase mb-4">Support</h5>
+            <div class="list-unstyled d-flex flex-column gap-2">
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Privacy Policy</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Terms & Conditions</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Disclaimer</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Support</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  FAQ</a
+                >
+              </div>
+              <div>
+                <a href="#" class="text-decoration-none">
+                  <i class="fa-solid fa-angle-right me-3"></i>
+                  Help</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Info Section -->
+          <div class="col-lg-6 col-md-6 col-xl-3 mb-4">
+            <h5 class="fw-bold text-uppercase mb-4">Contact Info</h5>
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-solid fa-location-dot me-3 mb-0"
+                  style="color: #00d084"
+                ></i>
+                <p class="mb-0">123 Street, New York, USA</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-envelope me-3" style="color: #00d084"></i>
+                <p class="mb-0">info@example.com</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i class="fa-solid fa-phone me-3" style="color: #00d084"></i>
+                <p class="mb-0">(+012) 3456 7890</p>
+              </div>
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-brands fa-firefox-browser me-3"
+                  style="color: #00d084"
+                ></i>
+                <p class="mb-0">Yoursite@ex.com</p>
+              </div>
+            </div>
+            <!-- Social Icons -->
+            <div class="d-flex mt-4">
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #00d084;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #00d084;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #00d084;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="me-3 d-flex justify-content-center align-items-center rounded-circle"
+                style="
+                  background-color: #00d084;
+                  text-decoration: none;
+                  color: white;
+                  width: 40px;
+                  height: 40px;
+                "
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          autoplay: true,
+          smartSpeed: 1000,
+          autoplayTimeout: 5000,
+          autoplayHoverPause: true,
+          autoHeight: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            768: {
+              items: 2,
+            },
+            1100: {
+              items: 3,
+            },
+          },
+          slideBy: 1,
+        });
+      });
+    </script>
+  </body>
+</html>
